@@ -1,6 +1,8 @@
 import React from 'react'
 
-export default function Fruits({ fruits }) {
+export default function Fruits({ fruits, vegetables }) {
+  console.log(fruits)
+  console.log(vegetables)
 
   const numbersOne = [1, 2, 3];
   const numbersTwo = [4, 5, 6];

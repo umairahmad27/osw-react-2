@@ -1,20 +1,17 @@
 import './App.scss';
 import "bootstrap/dist/js/bootstrap.bundle";
-
-import Header from "./components/Header"
-import Footer from './components/Footer';
-
-// Pages
-import Home from "./pages/Home"
+import Routes from './pages/Routes';
+import UserContextProvider from './context/UserContext';
+import CountContextProvider from './context/CountContext';
 
 function App() {
   return (
     <>
-      <Header />
-
-      <Home />
-
-      <Footer />
+      <UserContextProvider>
+        <CountContextProvider>
+          <Routes />
+        </CountContextProvider>
+      </UserContextProvider>
     </>
   );
 }

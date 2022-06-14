@@ -11,7 +11,7 @@ export default function Carousel() {
                 <div className="row">
                     <div className="col">
                         <h1>Carousel Page</h1>
-                        <Fruits fruits={fruits} />
+                        <Fruits fruits={fruits} vegetables="Not available" />
                     </div>
                 </div>
             </div>

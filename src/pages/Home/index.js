@@ -1,10 +1,14 @@
 import React from 'react'
-import Carousel from './Carousel'
+import Hero from './Hero'
+// import Carousel from './Carousel'
+// import Events from './Events'
 
 export default function index() {
     return (
         <>
-            <Carousel />
+            <Hero />
+            {/* <Carousel />
+            <Events /> */}
         </>
     )
 }
